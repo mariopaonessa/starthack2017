@@ -1,6 +1,6 @@
 # Welcome to the snippets for STARTHACK2017
 
-[logo]:https://www.swisscom.ch/en/residential.html
+[logo]:start-hack-2017.jpg
 
 ATTENTION: THESE SNIPPETS ARE NOT MADE FOR LARGESCALE APPROACHES.
 
