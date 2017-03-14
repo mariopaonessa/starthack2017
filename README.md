@@ -8,7 +8,7 @@
 
 `!!!!!!!!!!!!! ATTENTION - THESE SNIPPETS ARE NOT MADE FOR REAL USAGE!!!!!!!!!!!!!!`
 
-It will grow durign starthack2017. Here you can find some:
+It will grow durign starthack2017. Here you can find some hints for:
  
 1. Basics with tensorflow
 2. Sample for speaker recognition
