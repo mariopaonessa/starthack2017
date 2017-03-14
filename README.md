@@ -15,7 +15,7 @@ It will grow durign starthack2017. Here you can find some:
 It will just give you a sample. For improvement you need to transform it into an online approach like used in recommendations (i.E classic Movie Databases)
 
 
-##1. Getting started with tensorflow
+## 1. Getting started with tensorflow
 
 Everything is very well documented.
 
@@ -23,7 +23,7 @@ https://www.tensorflow.org/get_started/get_started
 
 We recommend the "MNIST For ML Beginners" tutorial.
 
-##2. Sample for speaker recognition (classifier)
+## 2. Sample for speaker recognition (classifier)
 
 In this example we try to recognize the speaker by a sample. We use in this sample MFCC () as feature.
 
@@ -31,4 +31,4 @@ The MFCC features we extract with <a href="https://github.com/librosa/librosa">l
 
 
 
-##3. Sample for speaker recommendation based on classifier
+## 3. Sample for speaker recommendation based on classifier
