@@ -2,6 +2,8 @@
 
 [logo]:start-hack-2017.jpg
 
+![alt text][logo]
+
 ATTENTION: THESE SNIPPETS ARE NOT MADE FOR LARGESCALE APPROACHES.
 
 It will grow durign starthack2017. Here you can find some:
