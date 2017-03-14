@@ -17,9 +17,7 @@ It will just give you a sample. For improvement you need to transform it into an
 
 ## 1 Getting started with tensorflow
 
-Everything is very well documented.
-
-https://www.tensorflow.org/get_started/get_started
+Everything is very well documented on the tensorflow webpage: https://www.tensorflow.org/get_started/get_started
 
 We recommend the "MNIST For ML Beginners" tutorial.
 
