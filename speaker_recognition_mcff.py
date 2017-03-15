@@ -57,19 +57,15 @@ net.train(data=batch,batch_size=10,steps=training_iters,dropout=0.6,display_step
 
 speakers = recorded_data.get_speakers()
 print('speakers: ' + str(speakers))
-demo_mcff = recorded_data.load_mcff_file('Test/sample.wav')
-print(demo_mcff)
+demo_mcff = recorded_data.load_mcff_file('Test/sample.wav')  # julia
 result = net.predict(demo_mcff, None)
-print(result)
 print(str(speakers[result]))
 
-demo_mcff = recorded_data.load_mcff_file('Test/sample1.wav')
-print(demo_mcff)
+demo_mcff = recorded_data.load_mcff_file('Test/sample1.wav') # petra
 results = net.predict_sort(demo_mcff, None)
-print(results)
 i = 0
 for result in results:
     i += 1
     id = results[i]
-    print(str(speakers[id]))
+    print('rank in results: ' + str((len(results) - i)) + ' - ' + str(speakers[id]))
 

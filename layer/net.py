@@ -467,7 +467,8 @@ class net:
 		self.summary_writer.add_summary(summary, global_step=step)
 		if accuracy == 1.0:
 			print("OVERFIT OK. Early stopping")
-			exit(0)
+			pass
+			# exit(0)
 
 	def resume(self, session):
 		checkpoint = tf.train.latest_checkpoint(checkpoint_dir)
@@ -534,7 +535,6 @@ class net:
 		for x in np.nditer(best):
 			y = np.nditer(x).value
 			item = y
-			print(item)
 			rank += 1
 			items_result.update({rank: item})
 		print("predicted: %s" % str())
