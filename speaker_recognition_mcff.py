@@ -1,6 +1,5 @@
 import numpy as np
-import tensorflow as tf
-import layer
+import layer  # wrapper
 import recorded_data
 from recorded_data import Source,Target
 

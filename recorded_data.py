@@ -134,7 +134,7 @@ def mfcc_batch_generator(batch_size=10, source=Source.DIGIT_WAVES, target=Target
     labels = []
     files = os.listdir(path)
     while True:
-        print('loaded batch of %d files' % len(files))
+        # print('load')
         shuffle(files)
         for file in files:
             if not file.endswith('.wav'):
@@ -168,7 +168,7 @@ def wave_batch_generator(batch_size=10, source=Source.DIGIT_WAVES, target=Target
     files = os.listdir(path)
     while True:
         shuffle(files)
-        print('loaded batch of %d files' % len(files))
+        # print('load')
         for wav in files:
             if not wav.endswith('.wav'):
                 continue
