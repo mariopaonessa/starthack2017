@@ -85,3 +85,8 @@ To handle N-dimensional array Objects  this sample contains <a href="http://www.
 
 
 ## 5 Sample for speaker recommendation based on classifier
+
+
+
+## 6 Inspiration
+https://github.com/pannous/tensorflow-speech-recognition
