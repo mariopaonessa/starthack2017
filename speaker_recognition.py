@@ -32,7 +32,7 @@ net = tflearn.fully_connected(net, number_classes, activation='softmax')
 net = tflearn.regression(net, optimizer='adam', loss='categorical_crossentropy')
 
 model = tflearn.DNN(net)
-model.fit(X, Y, n_epoch=100, show_metric=True, snapshot_step=100)
+model.fit(X, Y, n_epoch=200, show_metric=True, snapshot_step=100)
 
 input_file = 'Test/sample.wav'  # valeria
 demo = data.load_wav_file(data.path + input_file)

@@ -4,7 +4,7 @@ import recorded_data
 from recorded_data import Source,Target
 
 # LESS IS MORE! :)
-# play around with learning_rate and training_iters
+# play around with learning_rate and training_iters and batch size
 # TODO contribute
 learning_rate = 0.001
 training_iters = 40 #steps
@@ -47,8 +47,8 @@ def denseNet(net):
 
 
 # CHOSE MODEL ARCHITECTURE:
-# net=layer.net(simple_dense,input_shape=[height,width],output_width=classes, learning_rate=learning_rate) # untested
-# net=layer.net(model=denseConv,input_width= width*height,output_width=classes, learning_rate=learning_rate) # untested
+# net=layer.net(simple_dense,input_shape=[height,width],output_width=classes, learning_rate=learning_rate) # needs additional parameter alignment
+# net=layer.net(model=denseConv,input_width= width*height,output_width=classes, learning_rate=learning_rate) # needs additional parameter alignment
 net = layer.net(recurrent, input_shape=[height, width], output_width=classes, learning_rate=learning_rate)
 
 net.train(data=batch,batch_size=10,steps=training_iters,dropout=0.6,display_step=10,test_step=100) # test
