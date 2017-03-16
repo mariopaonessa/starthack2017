@@ -2,6 +2,7 @@
 
 ##### Tested with python 2.7 and 3.5 on MacOSX and Ubuntu
 
+
 [logo]:start-hack-2017.jpg
 
 ![alt text][logo]
@@ -22,6 +23,11 @@ For improvement you need to transform it into an online approach like used in re
 
 
 ## 1 Tinderlike App
+
+### Data you maybe need
+
+1.  <a href="https://www.mycloud.ch/s/S00A70A60A6B69196357B4955238424F4CCAA3FA977E239A3A88948722BD11FE">Voice Recodings with profile picture (not mandantory if you wanna collect data during the challenge)</a>
+2.  <a href="">Demo Data for classifier (already in git included)
 
 ### General ideas
 
