@@ -100,6 +100,13 @@ To handle N-dimensional array Objects  this sample contains <a href="http://www.
 
 
 ## 6 More Inspiration
+
+https://cs224d.stanford.edu/reports/LiuSingh.pdf
+
+http://dsp.stackexchange.com/questions/28898/mfcc-significance-of-number-of-features
+
+http://colah.github.io/posts/2015-08-Understanding-LSTMs/
+
 https://github.com/pannous/tensorflow-speech-recognition
 
 
