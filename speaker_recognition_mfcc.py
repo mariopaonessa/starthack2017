@@ -1,13 +1,14 @@
 import numpy as np
 import layer  # wrapper
 import recorded_data
+import time
 from recorded_data import Source,Target
 
 # LESS IS MORE! :)
 # play around with learning_rate and training_iters and batch size
 # TODO contribute
 learning_rate = 0.001
-training_iters = 60  # steps
+training_iters = 70  # steps
 batch_size = 64
 
 
@@ -61,6 +62,10 @@ result = net.predict(demo_mcff, None)
 print('detected julia as ' + str(speakers[result]))
 
 demo_mcff = recorded_data.load_mcff_file('Test/sample1.wav') # petra
+
+
+# while True:
+#    time.sleep(20)
 results = net.predict_sort(demo_mcff, None)
 i = 0
 for result in results:
@@ -70,4 +75,3 @@ for result in results:
         print('rank in results: ' + str((len(results) - i)) + ' - ' + str(speakers[id]))
     else:
         print('detected as speaker from petras voice: ' + str((len(results) - i)) + ' - ' + str(speakers[id]))
-
