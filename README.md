@@ -27,7 +27,6 @@ For improvement you need to transform it into an online approach like used in re
 ### Data you maybe need
 
 1.  <a href="https://www.mycloud.ch/s/S00A70A60A6B69196357B4955238424F4CCAA3FA977E239A3A88948722BD11FE">Voice Recodings with profile picture (not mandantory if you wanna collect data during the challenge)</a>
-2.  <a href="">Demo Data for classifier (already in git included)
 
 ### General ideas
 
@@ -81,18 +80,29 @@ Everything is very well documented on the tensorflow webpage: https://www.tensor
 
 We recommend the "MNIST For ML Beginners" tutorial.
 
-## 4 Sample for speaker recognition (classifier)
+## 4 Sample for speaker recognition (classifier) with simple WAV (speaker_recognition)
 
-In this example we try to recognize the speaker by a sample. We use in this sample MFCC () as feature. There are many other options to extract features from a speaker.
+In this example we try to recognize the speaker by a sample. this approach needs a lot of preprocessing and works just in a small space with mainly the same recording conditions.
 
-The MFCC features we extract with <a href="https://github.com/librosa/librosa">librosa</a>
+
+## 5 Sample for speaker recommendation based on classifier (speaker_recognition_mfcc)
+
+The actual implemented approach is very basic and tries just to give out the next strongest outputs.
+
+We use in this sample MFCC (Mel Frequency Cepstral Coefficents) as feature. There are many other options to extract features from a speaker.
+
+The MFCC features we extract with <a href="https://github.com/librosa/librosa">librosa</a> use a height from 20
+
+
 
 To handle N-dimensional array Objects  this sample contains <a href="http://www.numpy.org/">numpy</a>
 
 
-## 5 Sample for speaker recommendation based on classifier
 
-
-
-## 6 Inspiration
+## 6 More Inspiration
 https://github.com/pannous/tensorflow-speech-recognition
+
+
+### Contact:
+
+slack: swisscom_mario
