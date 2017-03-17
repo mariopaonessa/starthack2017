@@ -32,10 +32,10 @@ net = tflearn.fully_connected(net, number_classes, activation='softmax')
 net = tflearn.regression(net, optimizer='adam', loss='categorical_crossentropy')
 
 model = tflearn.DNN(net)
-model.fit(X, Y, n_epoch=200, show_metric=True, snapshot_step=100)
+model.fit(X, Y, n_epoch=400, show_metric=True, snapshot_step=100)
 
-input_file = 'Test/sample.wav'  # valeria
+input_file = 'Test/sample1.wav'  # petra
 demo = data.load_wav_file(data.path + input_file)
 result = model.predict([demo])
 result = data.one_hot_to_item(result, speakers)
-print('predicted speaker for %s : result = %s ' % (input_file, str(result)))
+print('for sample with petra voice predicted speaker for %s : result = %s ' % (input_file, str(result)))

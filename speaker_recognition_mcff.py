@@ -7,13 +7,13 @@ from recorded_data import Source,Target
 # play around with learning_rate and training_iters and batch size
 # TODO contribute
 learning_rate = 0.001
-training_iters = 40 #steps
+training_iters = 60  # steps
 batch_size = 64
 
 
 height=20 # mfcc features
 width=80 # (max) length of utterance
-classes=3 # speakers
+classes=6 # speakers
 
 batch = word_batch = recorded_data.mfcc_batch_generator(batch_size, source=Source.DIGIT_WAVES, target=Target.speaker)
 X, Y = next(batch)
@@ -58,7 +58,7 @@ speakers = recorded_data.get_speakers()
 print('speakers: ' + str(speakers))
 demo_mcff = recorded_data.load_mcff_file('Test/sample.wav')  # julia
 result = net.predict(demo_mcff, None)
-print(str(speakers[result]))
+print('detected julia as ' + str(speakers[result]))
 
 demo_mcff = recorded_data.load_mcff_file('Test/sample1.wav') # petra
 results = net.predict_sort(demo_mcff, None)
@@ -66,5 +66,8 @@ i = 0
 for result in results:
     i += 1
     id = results[i]
-    print('rank in results: ' + str((len(results) - i)) + ' - ' + str(speakers[id]))
+    if (len(results) - i) > 0:
+        print('rank in results: ' + str((len(results) - i)) + ' - ' + str(speakers[id]))
+    else:
+        print('detected as speaker from petras voice: ' + str((len(results) - i)) + ' - ' + str(speakers[id]))
 
