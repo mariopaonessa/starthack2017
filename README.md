@@ -7,7 +7,7 @@
 
 ![alt text][logo]
 
-`!!!!!!!!!!!!! ATTENTION - THESE SNIPPETS ARE NOT MADE FOR REAL USAGE!!!!!!!!!!!!!!`
+`!!!!!!!!!!!!! ATTENTION - THESE SNIPPETS ARE NOT MADE FOR REAL USAGE !!!!!!!!!!!!!!`
 
 It will develop during starthack2017. Here you can find some hints for:
 
