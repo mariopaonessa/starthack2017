@@ -28,6 +28,19 @@ For improvement you need to transform it into an online approach like used in re
 
 1.  <a href="https://www.mycloud.ch/s/S00A70A60A6B69196357B4955238424F4CCAA3FA977E239A3A88948722BD11FE">Voice Recodings with profile picture (not mandantory if you wanna collect data during the challenge)</a>
 
+HINT: If you wanna use this data to predict the speaker and extract features it needs some preproessing:
+1. cut off Silence
+2. cut in smaller pieces (mfcc)
+3. align probably volume
+
+Our files meta data:
+
+Channels       : 2
+Sample Rate    : 44100
+Precision      : 16-bit
+Sample Encoding: 16-bit Signed Integer PCM
+
+
 ### General ideas
 
 #### Images vs. Voice
