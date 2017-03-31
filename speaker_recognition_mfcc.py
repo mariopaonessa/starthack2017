@@ -66,12 +66,12 @@ demo_mcff = recorded_data.load_mcff_file('Test/sample1.wav') # petra
 
 # while True:
 #    time.sleep(20)
-results = net.predict_sort(demo_mcff, None)
-i = 0
-for result in results:
-    i += 1
-    id = results[i]
-    if (len(results) - i) > 0:
-        print('rank in results: ' + str((len(results) - i)) + ' - ' + str(speakers[id]))
-    else:
-        print('detected as speaker from petras voice: ' + str((len(results) - i)) + ' - ' + str(speakers[id]))
+# results = net.predict_sort(demo_mcff, None)
+# i = 0
+# for result in results:
+#    i += 1
+#    id = results[i]
+#    if (len(results) - i) > 0:
+#        print('rank in results: ' + str((len(results) - i)) + ' - ' + str(speakers[id]))
+#    else:
+#        print('detected as speaker from petras voice: ' + str((len(results) - i)) + ' - ' + str(speakers[id]))
